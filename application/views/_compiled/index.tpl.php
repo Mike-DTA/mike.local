@@ -1,0 +1,1 @@
+<?php $_ = OutlineRuntime::start(__FILE__, isset($this) ? $this : null); ?><?= $message ?><?php $_ = OutlineRuntime::finish(__FILE__); ?>
