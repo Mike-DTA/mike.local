@@ -5,7 +5,7 @@ class Request_Client_Internal extends Kohana_Request_Client_Internal
 	public function execute_request(Request $request)
 	{
 		// Create the class prefix
-		$prefix = 'controller_';
+		$prefix = 'controller_';//mike
 
 		// Directory
 		$directory = $request->directory();
@@ -50,7 +50,7 @@ class Request_Client_Internal extends Kohana_Request_Client_Internal
 			if ( ! class_exists($prefix.$controller))
 			{
 				$action = $controller;
-				$controller = $aRoute['controller'];
+				$controller = $aRoute['controller']; 
 			}
 
 			// Load the controller using reflection
