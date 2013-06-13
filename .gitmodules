@@ -16,3 +16,6 @@
 [submodule "modules/pagination"]
 	path = modules/pagination
 	url = git://github.com/kohana/pagination.git
+[submodule "modules/asset-merger"]
+	path = modules/asset-merger
+	url = git://github.com/OpenBuildings/asset-merger.git
