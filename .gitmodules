@@ -16,3 +16,12 @@
 [submodule "modules/asset-merger"]
 	path = modules/asset-merger
 	url = git://github.com/OpenBuildings/asset-merger.git
+[submodule "system"]
+	path = system
+	url = git://github.com/kohana/core.git
+[submodule "modules/simple-auth"]
+	path = modules/simple-auth
+	url = https://github.com/devi/simple-auth.git
+[submodule "modules/bnoafide"]
+	path = modules/bnoafide
+	url = https://github.com/shadowhand/bonafide.git
