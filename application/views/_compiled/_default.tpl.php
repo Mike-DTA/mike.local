@@ -22,8 +22,5 @@
 	<?php echo outline_function_include(array("view" => $view_footer, "data" => get_defined_vars())); ?>   
 	<?php } ?>
 
-	<div id="kohana-profiler">
-		<?= View::factory('profiler/stats') ?>
-	</div>
 </body>
 </html><?php $_ = OutlineRuntime::finish(__FILE__); ?>

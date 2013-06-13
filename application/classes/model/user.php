@@ -17,6 +17,11 @@ class Model_User extends ORM
 				array('min_length', array(':value', '2')),
 				array('max_length', array(':value', '50')),
 			),
+			'email' => array(
+				array('not_empty'),
+				array('email'),
+				array(array($this, 'check_email')),
+			),
 			'username' => array(
 				array('not_empty'),
 				array('min_length', array(':value', '4')),
@@ -49,13 +54,19 @@ class Model_User extends ORM
 		return !ORM::factory('user', array('username' => $sUsername))->loaded();
 	}
 
+	public function check_email( $sEmail )
+	{
+		return !ORM::factory('user', array('email' => $sEmail))->loaded();
+	}
+
 	public function create_hash( $sPassword = '' )
 	{
 		if( empty($sPassword) )
 		{
 			return '';
-		}	
-		return md5($sPassword.self::$sSalt);
+		}
+		$oBonafide = Bonafide::instance();
+		return $oBonafide->hash($sPassword);
 	}
 
 	public function proper_name( $sName )

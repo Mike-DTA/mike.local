@@ -6,11 +6,11 @@
 			</div>
 		
 			<div class="item last">
-			<?php if (isset($logged_in) && $logged_in) { ?>
-				Ingelogd als: <a href="/beveiligd/gebruiker">$username</a>
-				<a href="/beveiligd/uitloggen" class="small">Uitloggen</a>
+			<?php if ($logged_in) { ?>
+				Ingelogd als: <a href="/beveiligd/gebruiker"><?php echo $userdata['first_name']; ?></a>
+				<a href="/voorpagina/uitloggen" class="small">Uitloggen</a>
 			<?php } else { ?>
-				<a href="/beveiligd/inloggen">Inloggen</a> of
+				<a href="/voorpagina/inloggen">Inloggen</a> of
 				<a href="/voorpagina/registreren">Registreren</a>
 			<?php } ?>
 			</div>

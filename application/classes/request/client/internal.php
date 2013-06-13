@@ -5,7 +5,7 @@ class Request_Client_Internal extends Kohana_Request_Client_Internal
 	public function execute_request(Request $request)
 	{
 		// Create the class prefix
-		$prefix = 'controller_';//mike
+		$prefix = 'controller_';//conflict
 
 		// Directory
 		$directory = $request->directory();

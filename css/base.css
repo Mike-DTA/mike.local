@@ -16,7 +16,7 @@ body
 	width:960px;
 	margin: 20px auto 20px;
 	text-align: left;
-	padding: 20px 20px 20px 20px;
+	padding: 10px;
 	background: #fff;
 	border: 5px solid #cfcfcf;
 	border-radius: 10px;
@@ -27,13 +27,26 @@ body
 {
 	width: 100%;
 	height: 35px;
-	background-color: #a1ff00;
+	background-color: #eee;
 	overflow: auto;
 }
 
 .header
 {
 	border-radius: 5px 5px 0 0;
+}
+
+.header a
+{
+	color:#000;
+	font-weight:bold;
+	text-decoration: none;
+
+}
+
+.header a:hover
+{
+	text-decoration: underline;
 }
 
 .footer
@@ -58,15 +71,15 @@ body
 
 .content
 {
-	border-left: 5px solid #a1ff00;
-	border-right: 5px solid #a1ff00;
+	border-left: 5px solid #eee;
+	border-right: 5px solid #eee;
 	padding: 20px;
 }
 
 // Extras
 .small
 {
-	font-size: 12px;
+	font-size: 10px;
 }
 
 .highlight
@@ -85,11 +98,26 @@ body
 
 .formcontainer label:first-of-type
 {
-	width: 125px;
+	width: 150px;
 	float:left;
 }
 
 .formcontainer label.error
 {
 	color: #FF0000;
+}
+
+.message-box
+{
+	padding: 10px
+}
+.success
+{
+	border: 1px solid green;
+	background-color: #f3ffdf;
+}
+.error 
+{
+	border: 1px solid red;
+	background-color: #ffe3e3;
 }
